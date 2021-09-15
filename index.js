@@ -99,18 +99,18 @@ function Baby(name, age, favoriteToy) {
 }
 // Give Baby all the Person prototypes
 Baby.prototype = Object.create(Person.prototype);
+
 Baby.prototype.play = function() {
   return `Playing with ${this.favoriteToy}`
 }
 
-
 /* 
   TASK 4
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. Window binding means that 'this' references the window object by default
+  2. Implicit binding is when 'this' references an object that is being called by a function
+  3. New binding is when 'this' is used to create a new object
+  4. Explicit binding is when you call existing functions . Not sure exactly about this one
 */
 
 
